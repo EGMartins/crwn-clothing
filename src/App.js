@@ -16,6 +16,7 @@ import { createStructuredSelector } from 'reselect'
 
 import Header from './components/header/header.component'
 
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
@@ -32,9 +33,9 @@ class App extends React.Component {
             ...snapShot.data()
           });
         });
-        }else{
+      }else{
           setCurrentUser(userAuth);
-        }
+      }
     });
   }
 
